@@ -33,3 +33,39 @@ export interface AUTH_STATE {
     loginUser: LOGIN_USER;
     profiles: PROFILE[];
 }
+/*boardSlice.ts*/
+export interface READ_BOARD {
+    id: number;
+    title: string;
+    board: string;
+    category: number;
+    category_item: string;
+    comment: number;
+    comment_comment: string;
+    owner: number;
+    owner_username: string;
+    created_at: string;
+    updated_at: string;
+}
+export interface POST_BOARD {
+    id: number;
+    title: string;
+    board: string;
+    category: number;
+}
+export interface CATEGORY {
+    id: number;
+    item: string;
+}
+export interface COMMENT {
+    id: number;
+    comment: string;
+}
+export interface BOARD_STATE {
+    boards: READ_BOARD[];
+    editedBoard: POST_BOARD;
+    selectedBoard: READ_BOARD;
+    users: USER[];
+    category: CATEGORY[];
+    comment: COMMENT[];
+}
