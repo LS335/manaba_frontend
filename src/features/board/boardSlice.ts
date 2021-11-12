@@ -350,7 +350,7 @@ export const boardSlice = createSlice({
 export const { editBoard, selectBoard } = boardSlice.actions;
 
 export const selectSelectedBoard = (state: RootState) => state.board.selectedBoard;
-export const selectEditBoard = (state: RootState) => state.board.editedBoard;
+export const selectEditedBoard = (state: RootState) => state.board.editedBoard;
 export const selectBoards = (state: RootState) => state.board.boards;
 export const selectUsers = (state: RootState) => state.board.users;
 export const selectCategory = (state: RootState) => state.board.category;
