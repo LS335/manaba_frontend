@@ -69,3 +69,9 @@ export interface BOARD_STATE {
     category: CATEGORY[];
     comment: COMMENT[];
 }
+/*BoardList.tsx*/
+export interface SORT_STATE {
+    rows: READ_BOARD[];
+    order: "desc" | "asc";
+    activeKey: string;
+}
